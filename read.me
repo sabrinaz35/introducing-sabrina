@@ -1,0 +1,8 @@
+#Introducing me 
+
+##Leerdoelen:
+1. Leren begrijpen hoe je een redelijke complexe function schrijft en goed begrijpen wat ik nu doe.
+2. Visueel aantrekkelijke css code schrijven, dingen uitproberen met svg's en meer de diepte opzoeken met animaties en de mogelijkheden daarvan.
+3. Tijdens het samenwerken mijn belangen beter benoemen en de andere daarin ook de ruimte in te geven.
+
+waarom erbij zetten
