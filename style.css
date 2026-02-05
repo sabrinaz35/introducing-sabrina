@@ -78,12 +78,10 @@ section {
   }
 }
 
-body:hover div {
-  rotate: y -180deg;
-}
-
-/* .animate div {
+/* body:hover div {
   rotate: y -180deg;
 } */
 
-@keyframes;
+.animate {
+  rotate: y -180deg;
+}

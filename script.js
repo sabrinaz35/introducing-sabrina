@@ -38,13 +38,13 @@ async function insertUserInfo(){
  */
 
 
-// let pagina = document.querySelector("div:first-of-type");
+let pagina = document.querySelector("section");
 
-// pagina.addEventListener('click', flippingAnimation);
+pagina.addEventListener('click', flippingAnimation);
 
-// function flippingAnimation(){
-//     let onePage = document.querySelector("section");
+function flippingAnimation(){
+    let onePage = document.querySelector("div:first-of-type");
     
-//     onePage.classlist.add('animate');
-// };
+    onePage.classlist.add('animate');
+};
 
