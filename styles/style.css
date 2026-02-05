@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: hotpink;
+  --3rd-color: antiquewhite;
+  --background-color: lightblue;
+}
+
+main {
+  perspective: 100em;
+  transform-style: preserve-3d;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+}
+
+div {
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  width: fit-content;
+  transform-style: preserve-3d;
+  transform-origin: left;
+  transition: 1s;
+
+  &:nth-of-type(1) {
+    rotate: y -3deg;
+  }
+  &:nth-of-type(2) {
+    rotate: y -2deg;
+  }
+  &:nth-of-type(3) {
+    rotate: y -1deg;
+  }
+  &:nth-of-type(4) {
+    rotate: y 0deg;
+  }
+}
+
+div.omgeslagen {
+  &:nth-of-type(1) {
+    rotate: y -180deg;
+  }
+  &:nth-of-type(2) {
+    rotate: y -179deg;
+  }
+  &:nth-of-type(3) {
+    rotate: y -178deg;
+  }
+  &:nth-of-type(4) {
+    rotate: y -177deg;
+  }
+
+  /* rotate: y -180deg; */
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figure */
+
+figure {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  width: 40vw;
+  aspect-ratio: 3/5;
+  background-color: var(--3rd-color);
+  backface-visibility: hidden;
+
+  &:nth-of-type(2) {
+    rotate: y 180deg;
+  }
+}
+
+footer {
+  display: grid;
+  grid-row-start: 2;
+  place-items: center;
+
+  .prevButton {
+    grid-column-start: 1;
+  }
+
+  .nextButton {
+    grid-column-start: 2;
+  }
+}
+
+button {
+  width: 5vw;
+  font-size: 35px;
+  border-radius: 30rem;
+  padding: 10px;
+  margin: 10px;
+}
