@@ -52,6 +52,12 @@ Ik heb vandaag veel dingen geleerd:
  - Eventueel een start maken aan de light/dark mode 
  - En afbeeldingen/svg's toevoegen aan mijn paspoort.
 
+
+## Proces 5 februari 
+![alt text](images-readme/5feb-javascript.png)
+
+
+
 ## Daily checkout 2: 5 februari 
 
 ### Wat heb ik vandaag gedaan?
@@ -72,7 +78,11 @@ Vandaag ben ik bezig geweest met:
 ### Wat heb ik geleerd?
 - Geleerd hoe ik een boek met een click eventlistener
 
+
 ### Wat ga ik morgen doen?
+- Morgen ben ik van plan om mijn zogezegde paspoort te vullen met afbeeldingen, die afbeeldingen zeggen iets over mijn leerdoelen en mijn hobby's
+- En als ik tijd over heb wil ik nog gaan kijken naar de light en dark mode
+- En ook alvast wat kleuren opzoeken die ik als pallette wil gebruiken.
 
 
  ## Bronvermelding
