@@ -54,7 +54,30 @@ Ik heb vandaag veel dingen geleerd:
 
 
 ## Proces 5 februari 
-![alt text](images-readme/5feb-javascript.png)
+Ik ben vandaag bijna de gehele dag bezig geweest om mijn functions in Javascript te krijgen. Ik had in eersye instantie een opzet gemaakt, alleen dat werkte niet goed, ik kwam er niet uit en heb wel veel dingen opgezocht erover. Alleen ik kreeg geen grip op de logica met de nummers.
+
+Uiteindelijk heb ik samen met Vasilis er nog naar gekeken en die heeft mij op weg geholpen en hebben we het volgende geschreven.
+
+<img src="images-readme/5feb-poging1-java.png" alt="alt text" width="200" />
+
+Dit ging goed en ik had voor elkaaar gekregen om de eerste pagina te laten omslaan. Alleen vervolgens als ik doorklikte werkte het niet meer en kreeg ik in mijn consol de volgende fout.
+
+<img src="images-readme/error-in-doc.png" alt="alt text" width="200" />
+
+Ik kwam erachter dat er toch nog een foutje in stond in de geschreven code, dus dat had ik aangepast en toen kreeg ik geen foutcode meer. Nu was alleen het probleem nog dat ik de volgende pagina moest selecteren om vervolgend die om te laten kunnen slaan. Dus ik heb onderzoek gedaan naar hoe dat het beste kon en ik kwam uit op een element:  doublePage = doublePage.nextSibling; 
+ https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling  
+
+ Dit had ik er als volgt ingezet 
+ <img src="images-readme/next-sibling-javascript.png" alt="alt text" width="200" />
+
+Alleen dit werkte nog niet en ik kon niet achterhalen wat de fout daarin was, plus de pagina's van mijn boek die stonden verkeerd. Dus dat was ook nog eens een probleem waar ik tegenaan liep. 
+Na tijd te hebben besteed aan het onderzoeken, kwam ik er weer niet uit en heb ik weer om hulp gevraagd.
+
+Ik merk toch echt dat javascript andere koek is en dat het nog best wel pittig is. 
+
+
+Uiteindelijk na enige moeite en veel hulp is het gelukt en is het het volgende geworden. 
+ <img src="images-readme/5feb-javascript.png" alt="alt text" width="200" />
 
 
 
@@ -85,6 +108,17 @@ Vandaag ben ik bezig geweest met:
 - En ook alvast wat kleuren opzoeken die ik als pallette wil gebruiken.
 
 
+## Proces 6 februari
+Voor de styling heb ik voor de binnenkant zoiets in gedachten:
+<img src="images-readme/paspoort-vision-idee.png" alt="alt text" width="200" />
+
+Voor nu gebruik ik tijdelijk algemene afbeeldingen van internet alleen ik wil kijken of het volgende week nog lukt om zelf aan de slag te gaan ermee.
+
+Idee: Voor de stickers op de pagina van de travel, heb ik als idee om de stickers die ik thuis heb in te scannen en die ervoor te gebruiken.
+
+
+
+
  ## Bronvermelding
 
  Voor de .classlist
@@ -96,7 +130,7 @@ Vandaag ben ik bezig geweest met:
 
  https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figure 
 
- ### svg
+ ### svg& afbeeldingen
 
  https://nl.freepik.com/vectoren/bloem-svg 
 
@@ -105,6 +139,10 @@ Vandaag ben ik bezig geweest met:
 https://nl.freepik.com/search?format=search&last_filter=query&last_value=wereldbol+svg&query=wereldbol+svg&type=vector
 
 https://www.freepik.com/search?file_type=ai&format=search&last_filter=selection&last_value=1&query=boek+svg&selection=1 
+
+https://www.flaticon.com/free-icon/earth-globe_158184
+
+https://www.freepik.com/free-vector/malaga-spain-andalusia-city-silhouette-white-background-vector-illustration-business-travel-tourism-concept-with-modern-buildings-image-banner-web-site_23832352.htm#fromView=keyword&page=1&position=1&uuid=74d193a3-69de-4ec5-bc0b-bb8f1ca97408&query=Malaga 
 
 ### Voor javascript
 

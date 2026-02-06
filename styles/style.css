@@ -4,19 +4,60 @@
 }
 
 :root {
-  --primary-color: #000000;
-  --secondary-color: hotpink;
-  --3rd-color: antiquewhite;
-  --background-color: lightblue;
+  color-scheme: light dark;
+
+  --text-color: light-dark(#000000, #fff7e7);
+  --background-color: light-dark(lightblue, rgb(91, 88, 88));
+  --pasport-color: light-dark(#f5516c, #f59baa);
+  --paper-color: light-dark(antiquewhite, rgb(157, 107, 73));
+
+  /* f3bec6 */
+
+  --border-radius-book: 25px;
+  --small-font-size: 40px;
+}
+
+:root:has([value="light"]:checked) {
+  color-scheme: light;
+}
+
+[value="light"],
+[value="dark"] {
+  scale: 2;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 3rem;
+}
+
+:root:has([value="dark"]:checked) {
+  color-scheme: dark;
+}
+
+header {
+  display: grid;
+  place-content: center;
+  margin: 10rem;
 }
 
 main {
-  perspective: 100em;
+  perspective: 90em;
   transform-style: preserve-3d;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-content: center;
+  margin: 10rem;
+  /* background-color: var(--background-color); */
 }
 
 div {
@@ -56,23 +97,66 @@ div.omgeslagen {
     rotate: y -177deg;
   }
 
-  /* rotate: y -180deg; */
+  section {
+    border-radius: var(--border-radius-book) 0 0 var(--border-radius-book);
+  }
 }
 
 /* https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figure */
 
-figure {
+section {
+  display: grid;
   grid-column-start: 1;
   grid-row-start: 1;
-  width: 40vw;
+  width: 42vw;
   aspect-ratio: 3/5;
-  background-color: var(--3rd-color);
+  background-color: var(--paper-color);
   backface-visibility: hidden;
+  border-radius: 0 var(--border-radius-book) var(--border-radius-book) 0;
+  padding: 1rem;
 
   &:nth-of-type(2) {
     rotate: y 180deg;
   }
+
+  h2 {
+    border: solid var(--pasport-color) 4px;
+    padding: 1rem;
+    margin: 3rem;
+    width: fit-content;
+    color: var(--pasport-color);
+    height: fit-content;
+    transform: rotate(-20deg);
+    font-size: 30px;
+  }
+
+  img {
+    width: 50%;
+    place-content: center;
+    grid-row-start: 2;
+  }
 }
+
+/* Styling van de pagina's */
+
+div:first-of-type section:first-child {
+  display: grid;
+  grid-template-rows: 1fr 15px 15px 3fr;
+  place-items: center;
+  background-color: var(--pasport-color);
+
+  h1 {
+    font-size: 6rem;
+    grid-row-start: 1;
+    text-align: center;
+  }
+
+  img {
+    grid-row-start: 4;
+  }
+}
+
+/* De footer -> de buttons staan inde footer daarom staat de styling eronder */
 
 footer {
   display: grid;
@@ -89,9 +173,11 @@ footer {
 }
 
 button {
-  width: 5vw;
-  font-size: 35px;
+  width: fit-content;
+  font-size: 40px;
   border-radius: 30rem;
-  padding: 10px;
+  padding: 2rem;
   margin: 10px;
+  border: none;
+  background-color: var(--pasport-color);
 }
