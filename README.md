@@ -99,7 +99,7 @@ Vandaag ben ik bezig geweest met:
 15:45 - 16:00 Checkout
 
 ### Wat heb ik geleerd?
-- Geleerd hoe ik een boek met een click eventlistener
+- Geleerd hoe ik een boek met een click eventlistener kan laten werken
 
 
 ### Wat ga ik morgen doen?
@@ -117,11 +117,28 @@ Voor nu gebruik ik tijdelijk algemene afbeeldingen van internet alleen ik wil ki
 Idee: Voor de stickers op de pagina van de travel, heb ik als idee om de stickers die ik thuis heb in te scannen en die ervoor te gebruiken.
 
 
+## Weekly checkout week 1
+Deze week begon ik naar mijn idee helemaal blanco, ik heb wel al een aantal vakken met code voorgaande jaren gehad, maar na een jaar bijna niet gecodeerd te hebben is het toch wel weer inkomen. 
+
+Deze week ging daarom ook met ups en down, javascript was ik helemaal kwijt. De introductie lessen voorafgaand aan de minor heeft mij in ieder geval geholpen om een api werkend te krijgen.
+
+Ook moet ik zeggen dat ik soms voor mijn idee wat te lang bij een probleem bleef hangen, waardoor het meer tijd kostte dan gewoonlijk, daar kan ik misschien volgende week ook wat meer op gaan letten.
+
+Als ik nu terug kijk op wat ik allemaal heb gedaan is het best wel veel en had ik dit niet vooraf kunnen bedenken. Ik heb geleerd hoe ik een function moet schrijven voor het omslaan van een boek, ik heb geleerd hoe ik eventuele scroll-animations kan maken, hoe je een pagina light-dark thema geeft en tevens ook hoe je ingevoegde html via javascript kan bewerken met css. 
+
+Ik ben blij met waar ik het deze week naartoe gewerkt heb en ben trots op het resultaat wat ik nu heb staan.
+
+<img src="images-readme/tussentijds-deel.png" alt="alt text" width="200" />
+
+Volgende week wil ik mij meer gaan focussen op visueel vlak en mijzelf daarop nog uitdagen en kijken hoe ik de kleuren van light-dark wat mooier en voor beide pagina's aantrekkelijk kan maken. En daarbij ook wat dieper in de css duiken.
+
+
 
 
  ## Bronvermelding
 
  Voor de .classlist
+
  https://stackoverflow.com/questions/76157470/is-there-a-way-to-animate-a-button-on-click-with-classlist-add 
 
  https://www.geeksforgeeks.org/javascript/how-to-make-animated-click-effect-using-html-css-and-javascript/

@@ -127,7 +127,7 @@ section {
     color: var(--pasport-color);
     height: fit-content;
     transform: rotate(-20deg);
-    font-size: 30px;
+    font-size: 3rem;
   }
 
   img {
@@ -144,11 +144,16 @@ div:first-of-type section:first-child {
   grid-template-rows: 1fr 15px 15px 3fr;
   place-items: center;
   background-color: var(--pasport-color);
+  gap: 1.5rem;
 
   h1 {
     font-size: 6rem;
     grid-row-start: 1;
     text-align: center;
+  }
+
+  p {
+    font-size: 35px;
   }
 
   img {
