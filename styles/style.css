@@ -11,19 +11,29 @@
   --pasport-color: light-dark(#f5516c, #f59baa);
   --paper-color: light-dark(antiquewhite, rgb(157, 107, 73));
 
-  /* f3bec6 */
-
   --border-radius-book: 25px;
   --small-font-size: 40px;
 }
 
-:root:has([value="light"]:checked) {
-  color-scheme: light;
+@font-face {
+  /* https://www.dafont.com/elegant-typewriter.font */
+  font-family: Typewriter;
+  src: url(fonts/elegant-typewriter-regular.tff) format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 [value="light"],
 [value="dark"] {
-  scale: 2;
+  scale: 1;
+}
+
+:root:has([value="dark"]:checked) {
+  color-scheme: dark;
+}
+
+:root:has([value="light"]:checked) {
+  color-scheme: light;
 }
 
 form {
@@ -36,28 +46,21 @@ label {
   display: flex;
   align-items: center;
   gap: 0.5em;
-  font-size: 3rem;
-}
-
-:root:has([value="dark"]:checked) {
-  color-scheme: dark;
 }
 
 header {
   display: grid;
   place-content: center;
-  margin: 10rem;
+  margin: 3rem;
 }
 
 main {
   perspective: 90em;
   transform-style: preserve-3d;
-
+  font-family: "Typewriter", Georgia, "Times New Roman", Times, serif;
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-content: center;
-  margin: 10rem;
-  /* background-color: var(--background-color); */
 }
 
 div {
@@ -121,19 +124,33 @@ section {
 
   h2 {
     border: solid var(--pasport-color) 4px;
-    padding: 1rem;
-    margin: 3rem;
+    padding: 5px;
     width: fit-content;
     color: var(--pasport-color);
     height: fit-content;
     transform: rotate(-20deg);
-    font-size: 3rem;
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 15px;
   }
 
   img {
     width: 50%;
     place-content: center;
     grid-row-start: 2;
+  }
+
+  li {
+    font-size: 10px;
+    list-style-type: none;
+  }
+}
+
+@media (width>750px) {
+  section {
+    width: 20vw;
   }
 }
 
@@ -144,20 +161,109 @@ div:first-of-type section:first-child {
   grid-template-rows: 1fr 15px 15px 3fr;
   place-items: center;
   background-color: var(--pasport-color);
-  gap: 1.5rem;
+  gap: 0.5rem;
 
   h1 {
-    font-size: 6rem;
+    font-size: 2rem;
     grid-row-start: 1;
     text-align: center;
   }
 
   p {
-    font-size: 35px;
+    font-size: 10px;
   }
 
   img {
     grid-row-start: 4;
+  }
+}
+
+/* My profile pagina */
+
+div:first-of-type section:nth-of-type(2) {
+  display: grid;
+  grid-template-rows: 40px 1fr 1fr;
+
+  h2 {
+    grid-row: 1;
+  }
+
+  h3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  article:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  article:nth-of-type(2) ul {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* Werkpagina */
+
+div:nth-of-type(2) section:nth-of-type(1) {
+  h2 {
+    grid-column-start: 1;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p:first-of-type {
+    grid-row-start: 2;
+    grid-column-start: 2;
+  }
+
+  p:nth-of-type(2) {
+    grid-row-start: 3;
+    grid-column-start: 1;
+  }
+
+  img:nth-of-type(2) {
+    grid-row-start: 3;
+    grid-column-start: 2;
+  }
+}
+
+/* De travel pagina */
+
+div:nth-of-type(2) section:nth-of-type(2),
+div:nth-of-type(3) section:nth-of-type(1) {
+  ul {
+    display: grid;
+    gap: 10px;
+
+    li img {
+      box-shadow: 1px 1px 10px #b4b4b4;
+    }
+
+    li:nth-of-type(2) {
+      grid-row-start: 1;
+      grid-column-start: 2;
+    }
+
+    li:nth-of-type(even) {
+      rotate: 5deg;
+    }
+  }
+
+  img {
+    width: 100%;
   }
 }
 
@@ -179,9 +285,9 @@ footer {
 
 button {
   width: fit-content;
-  font-size: 40px;
+  font-size: 15px;
   border-radius: 30rem;
-  padding: 2rem;
+  padding: 1rem;
   margin: 10px;
   border: none;
   background-color: var(--pasport-color);

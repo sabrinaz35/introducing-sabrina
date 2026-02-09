@@ -1,9 +1,9 @@
 console.log("het werkt");
 
 
-
 /**
  * Toevoegen van API
+ * De twee codeblokken hieronder heb ik geschreven met behulp van de opdrachten voorafgaand aan deze minor, waarin we de api ophalen al hadden geoefend
  */
 
 insertUserInfo();
@@ -12,8 +12,6 @@ async function insertUserInfo(){
     const baseURL = 'https://fdnd.directus.app/items'
     const endpoint = '/person/320 '
     const url = baseURL + endpoint
-
-    
 
     let response = await fetch(url)
 
@@ -26,7 +24,7 @@ async function insertUserInfo(){
     <h1>${userInfo.data.name}'s world</h1>
     <p>Birthday: ${userInfo.data.birthdate}</p>
     <p>Githandle: ${userInfo.data.github_handle}</p>
-    <img src="images/wereldbol.png" alt="wereldbol icon zwart wit" />
+    <img src="images/wereld.svg" alt="wereldbol icon zwart wit" />
     </section>
     `
     const kaft = document.querySelector('div:first-of-type section:first-of-type')
@@ -34,19 +32,52 @@ async function insertUserInfo(){
     kaft.insertAdjacentHTML('beforebegin',userInfoHTML)
 }
 
+
+medeWebbersInfo();
+
+async function medeWebbersInfo ( ) {
+       const baseURL = 'https://fdnd.directus.app/items'
+    const endpoint = '/person/?page=3&limit=2'
+    const url = baseURL + endpoint
+
+    let response = await fetch(url)
+
+    let userInfo = await response.json()
+   
+    console.log(userInfo)
+
+    userInfo.forEach( function(userInfo){
+
+    let userInfoHTML =
+    `<article>
+    <h3>${userInfo.data.name} </h3>
+    <p>Birthday: ${userInfo.data.birthdate}</p>
+    <p>Githandle: ${userInfo.data.github_handle}</p>
+    </article>
+    `
+    const kaft = document.querySelector('div:last-of-type section:first-of-type')
+
+    kaft.insertAdjacentHTML('beforeend',userInfoHTML)
+
+    });
+    
+};
+
+
+
+
+
 /**
  * Pagina's omslaan van het boekje
  */
 
 // https://codepen.io/Nidhanshu/pen/YaLYgw om een opstart mee te maken, maar verder niet veel mee gedaan
-// Vasilis heeft mij hier ook bij geholpen
+// Vasilis en Sanne hebben mij hier beide bij geholpen
 
 var nextButton = document.querySelector('.nextButton');
 var prevButton = document.querySelector('.prevButton');
 
 // een waarde aan meegeven, zodat hij op basis daarvan de animatie kan gaan uitvoeren
-// var doublePage = document.querySelectorAll('.page').length;
-
 var doublePage = 1;
 
 nextButton.addEventListener('click', turnPageRight);
@@ -81,58 +112,12 @@ function turnPageLeft() {
             if(paginaDieOmgeslagenMoetWorden.previousElementSibling){
                 doublePage = doublePage - 1;
             }
-            //doublePage = doublePage - 1;
+
         }
 
 };
 
-    
-        //    doublePage = doublePage - 1;
-        // var flippingPage = document.querySelector('.page:nth-of-type(' + doublePage + ')');
-        //  flippingPage.classList.add("omgeslagen");
 
-        //  var flippingPage = document.querySelector('main')
-        //  flippingPage.children[doublePage].classList.add("omgeslagen");
-
-    // if (doublePage>=1){
- 
-
-    //     // https://www.javascripttutorial.net/dom/css/check-if-an-element-contains-a-class/
-    //     // if(Element.classList.contains('.omgeslagen')){
-    //     // // https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling 
-    //     // //  doublePage = 1
-    //     // doublePage = doublePage.nextSibling;
-    //     // }
-    // } else {
-    //     // doublePage = doublePage + 1;
-    // }
-
-    
-
-
-
-
-        
-
-            // doublePage = doublePage + 1;
-        // var flippingPage = document.querySelector('.page:nth-of-type(' + doublePage + ')');
-        // flippingPage.classList.remove("omgeslagen");
-
-
-
-
-//   if (doublePage>=1 || 0){
-//         doublePage = doublePage + 1;
-//         var flippingPage = document.querySelector('.page:nth-of-type(' + doublePage + ')');
-//         flippingPage.classList.remove("omgeslagen");
-
-//         // if(doublePage == 1){
-//         //  document.querySelector('.page:nth-of-type(' + doublePage + ')').classList.remove("omgeslagen");
-//         //  doublePage = 2
-//         // }
-//     } else {
-//         // doublePage = doublePage
-//     }
 
 
 

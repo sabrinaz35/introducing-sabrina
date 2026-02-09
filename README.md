@@ -3,7 +3,7 @@ Dit is een website om mijzelf voor te stellen
 
 ## Leerdoelen:
 1. Leren begrijpen hoe je een redelijke complexe function schrijft en goed begrijpen wat ik nu doe. Zodat ik zelfstandiger met javascript om kan gaan en ook makkelijker zelf dingen kan toevoegen.
-2. Visueel aantrekkelijke css code schrijven, dingen uitproberen met svg's en meer de diepte opzoeken met animaties en de mogelijkheden daarvan. Zodat ik meer de ins en out en de mogelijkheden te leren kennen.
+2. Visueel aantrekkelijke css code schrijven, dingen uitproberen met svg's en meer de diepte opzoeken met animaties en de mogelijkheden daarvan. Zodat ik meer de ins en out en de mogelijkheden te leren kennen. Maar voornamelijk kijken naar wat er allemaal nog meer mogelijk is.
 3. Tijdens het samenwerken mijn belangen beter benoemen en de andere daarin ook de ruimte in te geven. Zodat de communicatie in groepsverband beter en soepel kan laten lopen.
 
 
@@ -124,7 +124,7 @@ Deze week ging daarom ook met ups en down, javascript was ik helemaal kwijt. De 
 
 Ook moet ik zeggen dat ik soms voor mijn idee wat te lang bij een probleem bleef hangen, waardoor het meer tijd kostte dan gewoonlijk, daar kan ik misschien volgende week ook wat meer op gaan letten.
 
-Als ik nu terug kijk op wat ik allemaal heb gedaan is het best wel veel en had ik dit niet vooraf kunnen bedenken. Ik heb geleerd hoe ik een function moet schrijven voor het omslaan van een boek, ik heb geleerd hoe ik eventuele scroll-animations kan maken, hoe je een pagina light-dark thema geeft en tevens ook hoe je ingevoegde html via javascript kan bewerken met css. 
+Als ik nu terug kijk op wat ik allemaal heb gedaan is het best wel veel en had ik dit niet vooraf kunnen bedenken. Ik heb geleerd hoe ik een function moet schrijven voor het omslaan van een boek, ik heb geleerd hoe ik eventuele scroll-animations kan maken, hoe je een pagina light-dark thema geeft en tevens ook hoe je ingevoegde html via javascript kan bewerken met css. Ook heb ik verschillende dingen geleerde over preserve-3d en dat dat dan ook iets in perspectief kan zetten.
 
 Ik ben blij met waar ik het deze week naartoe gewerkt heb en ben trots op het resultaat wat ik nu heb staan.
 
@@ -133,6 +133,27 @@ Ik ben blij met waar ik het deze week naartoe gewerkt heb en ben trots op het re
 Volgende week wil ik mij meer gaan focussen op visueel vlak en mijzelf daarop nog uitdagen en kijken hoe ik de kleuren van light-dark wat mooier en voor beide pagina's aantrekkelijk kan maken. En daarbij ook wat dieper in de css duiken.
 
 
+## Daily checkout 3: 9 februari 
+Vandaag was ik niet aanwezig op school, ik heb het hele weekend ziek op bed gelegen en bleef nog een dagje thuis. Ik voelde mij wel al wat beter en heb daarom een paar dingetjes kunnen doen aan mijn website.
+
+### Wat heb ik vandaag gedaan?
+- Ik heb wat design stickers gemaakt via illustrator, ik heb geprobeerd om dit via svg's erin te zetten alleen dan kwamen de gemaakte ribbetjes niet mee die ze nu wel hebben. 
+- Een poging gedaan om de extra eis toe te voegen aan de website, dit is niet gelukt
+- Font proberen te veranderen ook dit werkte niet, maar ik heb binnenkort een workshop over typografie misschien dat dat daarbij helpt.
+-Verder een beetje layout aangepast naar wens en alvast wat gekeken naar hoe het scherm eruit komt te zien op groot scherm om het responsive te maken.
+
+### Hoe lang duurde het?
+Ik ben met de typografie en de api over die extra eis vrij kort mee bezig geweest ik denk ruim een half uur, en met de rest ben ik wel twee a drie uurtjes bezig geweest.
+
+### Wat heb ik geleerd?
+Ik merk dat nu ik steeds meer bezig ben met die layout grid dat ik daar steeds makkelijker mee om kan gaan en dat ik daar nu behendiger in begin te worden.
+
+### Wat ga ik morgen doen?
+Morgen als ik op school ben wil ik:
+- De extra eis fixen
+- kijken naar de algehele stijl en die aanpassen(voorkant boekje, misschien achtergrond) en des noods om hulp vragen bij andere daarvoor
+- Mijn typografie aangepast hebben en de laatste pagina met favorieten moet ik nog opvullen.
+- Als ik nog tijd over heb wil ik kijken of er nog ruimte is om animaties toe te voegen aan verschillende elementen.
 
 
  ## Bronvermelding
@@ -151,15 +172,11 @@ Volgende week wil ik mij meer gaan focussen op visueel vlak en mijzelf daarop no
 
  https://nl.freepik.com/vectoren/bloem-svg 
 
- https://nl.freepik.com/vectoren/gratis-hond-svg#uuid=afd78657-e104-4c60-a5b1-51a59ba89682 
-
 https://nl.freepik.com/search?format=search&last_filter=query&last_value=wereldbol+svg&query=wereldbol+svg&type=vector
 
 https://www.freepik.com/search?file_type=ai&format=search&last_filter=selection&last_value=1&query=boek+svg&selection=1 
 
 https://www.flaticon.com/free-icon/earth-globe_158184
-
-https://www.freepik.com/free-vector/malaga-spain-andalusia-city-silhouette-white-background-vector-illustration-business-travel-tourism-concept-with-modern-buildings-image-banner-web-site_23832352.htm#fromView=keyword&page=1&position=1&uuid=74d193a3-69de-4ec5-bc0b-bb8f1ca97408&query=Malaga 
 
 ### Voor javascript
 
@@ -167,4 +184,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_op
 
 https://www.javascripttutorial.net/dom/css/check-if-an-element-contains-a-class/ 
 
-https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling  
+https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling 
+
+### fonts
+
+https://www.dafont.com/elegant-typewriter.font 
