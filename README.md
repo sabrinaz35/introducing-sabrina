@@ -7,10 +7,6 @@ Dit is een website om mijzelf voor te stellen
 3. Tijdens het samenwerken mijn belangen beter benoemen en de andere daarin ook de ruimte in te geven. Zodat de communicatie in groepsverband beter en soepel kan laten lopen.
 
 
-## 
-https://fdnd.directus.app/items/person/?page=3 
-https://fdnd.directus.app/items/person/320 
-
 ## Workshops
 
 Eerst zat ik bij de workshop van Cyd en dat was best inzichtelijk met wat je allemaal kan doen met een scroll-animatie en hoe je dat moet doen.
@@ -155,9 +151,47 @@ Morgen als ik op school ben wil ik:
 - Mijn typografie aangepast hebben en de laatste pagina met favorieten moet ik nog opvullen.
 - Als ik nog tijd over heb wil ik kijken of er nog ruimte is om animaties toe te voegen aan verschillende elementen.
 
+## Proces 10 februari
+Vandaag ben ik verder gegaan aan mijn code en heb ik de api werkend gekregen.
+
+<img src="images-readme/10-2-2026hele-lijst-api.png" alt="alt text" width="200" />
+
+Uiteindelijk was dat gelukt, alleen wilde ik nog een functie erin hebben waarin er steeds andere mede web kandidaten tevoorschijn zou komen. Dit werkte in eerste instantie ook niet echt. Ik heb verschillende dingen geprobeerd, ik heb dit keer zelfs chatgpt gevraagd, maar daardoor snapte ik het ook niet meer. Dus ben ik toch weer naar Vasilis gegaan.
+
+Want ik kreeg de elementen wel in eerste instantie, maar door de mathrandom brak het het weer en kreeg ik een error 400 code vanuit de api.
+<img src="images-readme/10-2-2026javascript-code-math-random.png" alt="alt text" width="200" />
+
+## daily chackout 4: 10 februari
+### Wat heb ik vandaag gedaan?
+- Een workshop gehad over typografie, waarin ik heb geleerd dat een breedte van 20/40em de juiste breedte zijn voor het lezen.
+- Ik heb verder gewerkt aan de extra eis, dit ging niet zonder slag of stoot. Ik wilde een math.random eraan toevoegen alleen dit was toch lastiger dan gedacht.
+- Ik heb een typewriter font toegevoegd aan mijn code
+- Ik heb wat kunnen spelen met animaties. 
+-En de laatste layouts gedefinieerd en toegevoegd.
+
+### Hoe lang duurde het?
+09:30 - 10:00 Intro praatje 
+10:00 - 11:00 workshop typografie 
+11:00 - 11:30 gewerkt aan gradient
+11:30 - 12:00 typografie
+12:00 - 12:30 pauze
+12:30 - 14:30 api/extra eis gefixt
+14:30 - 15:00 layouts toegevoegd van de overige pagina's
+15:00 - 15:45 Gespeeld en geprobeerd met animaties
+
+### Wat heb ik geleerd?
+Ik heb geleerd hoe ik op een juiste manier de mathrandom voor elkaar krijg in de api, dit was best lastig en zal nog wel vaker nodig hebben om door te hebben hoe dit werkt, maar het begin is er.
+Ook heb ik wat tips en trick geleerd over typografie, waar ik nooit meer aan had gedacht.
+
+### Wat ga ik morgen doen?
+- Beetje de puntjes op de i zetten
+- Feedback vragen
+- Begin plaatje aanpassen
+- Misschien andere gradient kleur
+- nog wat animaties toevoegen.
+
 
  ## Bronvermelding
-
  Voor de .classlist
 
  https://stackoverflow.com/questions/76157470/is-there-a-way-to-animate-a-button-on-click-with-classlist-add 
@@ -168,23 +202,24 @@ Morgen als ik op school ben wil ik:
 
  https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figure 
 
- ### svg& afbeeldingen
+ ### svg & afbeeldingen
 
- https://nl.freepik.com/vectoren/bloem-svg 
+Alle afbeeldingen so far zijn zelf gemaakt. 
 
-https://nl.freepik.com/search?format=search&last_filter=query&last_value=wereldbol+svg&query=wereldbol+svg&type=vector
-
-https://www.freepik.com/search?file_type=ai&format=search&last_filter=selection&last_value=1&query=boek+svg&selection=1 
-
-https://www.flaticon.com/free-icon/earth-globe_158184
+Voor het genereren van de gradient. 
+https://cssgradient.io/
 
 ### Voor javascript
-
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators 
 
 https://www.javascripttutorial.net/dom/css/check-if-an-element-contains-a-class/ 
 
 https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling 
+
+ Bron: Chatgpt
+ Prompt: const endpoint = '/person/?filter[fav_emoji][_nnull]=true?limit=3/' + Math.floor(Math.random()*100) + 1; Klopt dit wat ik hier doe? In mijn code werkt het namelijk niet
+ https://chatgpt.com/share/698b157b-f1b0-8001-a6ee-c56649d07fa8 
+
 
 ### fonts
 

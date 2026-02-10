@@ -32,32 +32,61 @@ async function insertUserInfo(){
     kaft.insertAdjacentHTML('beforebegin',userInfoHTML)
 }
 
+/**
+ * De funtie voor een API waarin hij data ophaalt van andere.
+ * Waarin er een array van 40 mensen opgehaald worden en er meteen wordt gekeken of ze een emoji hebben ingevuld. 
+ * Daarna wordt de api omgezet in een json bestand en wordt er een shuffle aan toegevoegd, zodat er steeds 3 andere in beeld komen.
+ * Uiteindelijk moet er nog gecontroleerd worden of de data niet te veel shuffled en dat doe ik in de for each door i==3 te controleren,
+ *  dus als de browser 3x gerefreshed is doe dan niks anders voer uit wat eronder staat.
+ */
+
 
 medeWebbersInfo();
 
 async function medeWebbersInfo ( ) {
        const baseURL = 'https://fdnd.directus.app/items'
-    const endpoint = '/person/?page=3&limit=2'
-    const url = baseURL + endpoint
 
-    let response = await fetch(url)
+    /**
+     * Bron: Chatgpt
+     * Prompt: const endpoint = '/person/?filter[fav_emoji][_nnull]=true?limit=3/' + Math.floor(Math.random()*100) + 1; Klopt dit wat ik hier doe? In mijn code werkt het namelijk niet
+     *  https://chatgpt.com/share/698b157b-f1b0-8001-a6ee-c56649d07fa8 
+     * Andere bronnen: https://www.w3schools.com/js/js_random.asp voor het kijken war mathrandom doet
+     * Vasilus voor de mathrandom en de shuffle
+     */
+
+    const studenten = baseURL + '/person/?page=3&filter[fav_emoji][_nnull]=true&limit=40';
+    console.log(studenten);
+    //const random = Math.floor(Math.random()*17);
+    //const endpoint = '/person/?filter[fav_emoji][_nnull]=true&limit=3&offset=${random}';
+    // const endpoint = '/person/?filter[fav_emoji][_nnull]=true&page=3&limit=3';
+    // const url = baseURL + endpoint
+
+
+    // '/person/?page=3&limit=2'
+
+    let response = await fetch(studenten)
 
     let userInfo = await response.json()
    
-    console.log(userInfo)
+    shuffleArray(userInfo.data)
+    var i = 0;
 
-    userInfo.forEach( function(userInfo){
+    userInfo.data.forEach(function(userInfo){
+        if(i == 3) {
+            //
+        }
+        else {
+            let userInfoHTML =
+            `<li>
+            <h3>${userInfo.name} </h3>
+            <p> ${userInfo.fav_emoji}</p>
+            </li>
+            `
+            const medestudent = document.querySelector('div:last-of-type section:first-of-type ol')
 
-    let userInfoHTML =
-    `<article>
-    <h3>${userInfo.data.name} </h3>
-    <p>Birthday: ${userInfo.data.birthdate}</p>
-    <p>Githandle: ${userInfo.data.github_handle}</p>
-    </article>
-    `
-    const kaft = document.querySelector('div:last-of-type section:first-of-type')
-
-    kaft.insertAdjacentHTML('beforeend',userInfoHTML)
+            medestudent.insertAdjacentHTML('beforeend',userInfoHTML)
+            i++;
+        }
 
     });
     
@@ -69,10 +98,10 @@ async function medeWebbersInfo ( ) {
 
 /**
  * Pagina's omslaan van het boekje
+ * Bestaande uit twee functies, waarbij de een de linkerkant op slaat en de andere de andere kant op slaat.
+ * Bronnen: https://codepen.io/Nidhanshu/pen/YaLYgw .. om een opstart mee te maken, maar verder niet veel mee gedaan
+ * Verdere bronnen Vasilis en Sanne
  */
-
-// https://codepen.io/Nidhanshu/pen/YaLYgw om een opstart mee te maken, maar verder niet veel mee gedaan
-// Vasilis en Sanne hebben mij hier beide bij geholpen
 
 var nextButton = document.querySelector('.nextButton');
 var prevButton = document.querySelector('.prevButton');
@@ -120,4 +149,14 @@ function turnPageLeft() {
 
 
 
+/**
+ * Shuffle array functie waarbij de data uiteindelijk in mijn code wordt geshuffeld
+ * Hij geeft een lengte mee -1, want 0 heeft ook een waarde, Als de functie wordt aangevraagd dan doet hij een random + 1 
+ */
 
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
