@@ -26,13 +26,13 @@ Vandaag heb ik het volgende gedaan:
 - Geprobeerd de pagina's klikbaar te maken
 
 ### Hoe lang duurde het?
-09:30-10:00 opstarten met een introductie
-10:00-11:00 workshop Cyd
-11:00-12:00 workshop Justus
-12:00-13:00 Start gemaakt aan het boek maken 
-13:00 hulp gehad van Sanne met hoe ik het beste kan aanpakken
-14:00-15:00 Een poging gedaan met het toevoegen van een click mogelijkheid in javascript, dit werkt nog niet 
-15:00-16:00 checkout en de api in mijn javascript toegevoegd met de kennis van een van de voorgaande workshop voor de start van de minor
+- 09:30-10:00 opstarten met een introductie
+- 10:00-11:00 workshop Cyd
+- 11:00-12:00 workshop Justus
+- 12:00-13:00 Start gemaakt aan het boek maken 
+- 13:00 hulp gehad van Sanne met hoe ik het beste kan aanpakken
+- 14:00-15:00 Een poging gedaan met het toevoegen van een click mogelijkheid in javascript, dit werkt nog niet 
+- 15:00-16:00 checkout en de api in mijn javascript toegevoegd met de kennis van een van de voorgaande workshop voor de start van de minor
 
 
 ### Wat heb ik geleerd?
@@ -86,13 +86,13 @@ Vandaag ben ik bezig geweest met:
 - Onderzoek gedaan naar hoe ik een svg kan toevoegen aan mijn html
 
 ### Hoe lang duurde het?
-09:30 gedag meeting met de hele klas
-10:10 - 11:30 workshop Sanne
-11:30 - 12:00 github opschonen
-12:00 - 13:00 onderzoeken en opstarten van mijn javascript en toevoegen
-13:00 - 15:00 Javascript getest en aanpassingen gemaakt en vragen gesteld aan Vasilis 
-15:00 - 15:30 Opgezocht over svg's
-15:45 - 16:00 Checkout
+- 09:30 gedag meeting met de hele klas
+- 10:10 - 11:30 workshop Sanne
+- 11:30 - 12:00 github opschonen
+- 12:00 - 13:00 onderzoeken en opstarten van mijn javascript en toevoegen
+- 13:00 - 15:00 Javascript getest en aanpassingen gemaakt en vragen gesteld aan Vasilis 
+- 15:00 - 15:30 Opgezocht over svg's
+- 15:45 - 16:00 Checkout
 
 ### Wat heb ik geleerd?
 - Geleerd hoe ik een boek met een click eventlistener kan laten werken
@@ -173,14 +173,14 @@ Want ik kreeg de elementen wel in eerste instantie, maar door de mathrandom brak
 -En de laatste layouts gedefinieerd en toegevoegd.
 
 ### Hoe lang duurde het?
-09:30 - 10:00 Intro praatje 
-10:00 - 11:00 workshop typografie 
-11:00 - 11:30 gewerkt aan gradient
-11:30 - 12:00 typografie
-12:00 - 12:30 pauze
-12:30 - 14:30 api/extra eis gefixt
-14:30 - 15:00 layouts toegevoegd van de overige pagina's
-15:00 - 15:45 Gespeeld en geprobeerd met animaties
+- 09:30 - 10:00 Intro praatje 
+- 10:00 - 11:00 workshop typografie 
+- 11:00 - 11:30 gewerkt aan gradient
+- 11:30 - 12:00 typografie
+- 12:00 - 12:30 pauze
+- 12:30 - 14:30 api/extra eis gefixt
+- 14:30 - 15:00 layouts toegevoegd van de overige pagina's
+- 15:00 - 15:45 Gespeeld en geprobeerd met animaties
 
 ### Wat heb ik geleerd?
 Ik heb geleerd hoe ik op een juiste manier de mathrandom voor elkaar krijg in de api, dit was best lastig en zal nog wel vaker nodig hebben om door te hebben hoe dit werkt, maar het begin is er.
