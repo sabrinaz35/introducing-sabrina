@@ -234,9 +234,15 @@ In deze week heb ik flinke stappen gezet zelf. Ik ben het meeste trots op de ani
 ### Finished product
 Hieronder zie je de verschillende pagina's die ik heb gemaakt.
 
+Op de eerste pagina ben ik trots op de animatie die ik bij de wereldbol svg heb toegevoegd.
 <img src="images-readme/page-1-eindproduct.png" alt="Een foto van de eerste pagina van mijn prototype" width="500" />
+Op de tweede pagina ben ik veelal bezig geweest met display grid en heb nu wel echt het idee dat ik dat meer onder de knie begin te krijgen.
 <img src="images-readme/page-2-eindproduct.png" alt="Tweede foto van de tweede pagina's van mijn prototype" width="500" />
+Op de derde pagina zie plekkken waar ik naartoe ben geweest, met een aantal leuke animaties, om daar ook even mee te spelen. De uitgelichte vakanties die geanimeerd zijn, zijn mijn persoonlijke favorieten.
 <img src="images-readme/page-3-eindproduct.png" alt="Een foto van de derde en vierde pagina van mijn prototype" width="500" />
+op de vierde pagina zie je een aantal dingen die ik leuk vind en wat foto's van vrienden en familie, want die horen daar ook onder. Ook hier heb ik weer gespeeld met de display grid.
+<img src="images-readme/page-4-eindproduct.png" alt="Een aantal foto's van mij en mijn favorietes en de favoriete emojis van anderen." width="500" />
+Als laatste zie je een foto van mijn hond ter afsluiting want zij kan niet ontbreken. En daar heb ik een animatie toegevoegd dat ze heen en weer beweeegt, want ze kan in het echt ook niet stil zitten. 
 <img src="images-readme/page-5-eindproduct.png" alt="een foto van de laatste pagina van mijn prototype" width="500" />
 
 ### Geschreven code

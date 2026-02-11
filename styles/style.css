@@ -216,7 +216,7 @@ section {
   li,
   p {
     font-size: var(--small-font-size);
-    line-height: 1.5;
+    line-height: 1;
     list-style-type: none;
   }
 }
@@ -224,6 +224,13 @@ section {
 @media (width>750px) {
   section {
     width: 25vw;
+  }
+}
+
+@media (width>400px) {
+  section li,
+  section p {
+    line-height: 1.5;
   }
 }
 
@@ -255,7 +262,7 @@ svg {
   stroke: var(--text-color);
   stroke-miterlimit: 10;
   stroke-width: 8px;
-
+  width: 80%;
   &:hover {
     animation: drawLine 6s linear forwards;
   }
@@ -451,7 +458,15 @@ div:nth-of-type(4) section:nth-of-type(1) {
     font-size: var(--small-font-size);
   }
   li p {
-    font-size: 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (width>440px) {
+  div:nth-of-type(4) section:nth-of-type(1) {
+    li p {
+      font-size: 2.5rem;
+    }
   }
 }
 
