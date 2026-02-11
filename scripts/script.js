@@ -1,6 +1,5 @@
 console.log("het werkt");
 
-
 /**
  * Toevoegen van API
  * De twee codeblokken hieronder heb ik geschreven met behulp van de opdrachten voorafgaand aan deze minor, waarin we de api ophalen al hadden geoefend
@@ -105,8 +104,6 @@ function shuffleArray(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
 }
-
-
 
 /**
  * Pagina's omslaan van het boekje

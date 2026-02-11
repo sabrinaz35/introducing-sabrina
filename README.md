@@ -278,7 +278,7 @@ Ook Vasilis en Sanne zijn mijn bronnen geweest, omdat ik ze ontzettend veel vrag
 
  https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figure 
 
- ### svg & afbeeldingen
+ ### Svg & afbeeldingen
 
 Alle afbeeldingen so far zijn zelf gemaakt. 
 
@@ -305,5 +305,5 @@ https://www.youtube.com/watch?v=dRloFvC7g6I
 https://css-tricks.com/almanac/properties/s/stroke-dasharray/ 
 https://css-tricks.com/almanac/properties/s/stroke-dashoffset/
 
-### in de readme 
+### In de readme 
 https://static.vecteezy.com/ti/gratis-vector/t2/301548-binnenkant-van-een-paspoort-gratis-vector.jpg 
