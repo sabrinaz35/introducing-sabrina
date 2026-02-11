@@ -117,8 +117,6 @@ function shuffleArray(array) {
 
 var nextButton = document.querySelector('.nextButton');
 var prevButton = document.querySelector('.prevButton');
-
-// een waarde aan meegeven, zodat hij op basis daarvan de animatie kan gaan uitvoeren
 var doublePage = 1;
 
 nextButton.addEventListener('click', turnPageRight);
@@ -131,8 +129,6 @@ function turnPageRight() {
 
         var paginaDieOmgeslagenMoetWorden = document.querySelector( "div:nth-of-type(" + doublePage + ")")
 
-        // console.log(paginaDieOmgeslagenMoetWorden)
-
         if (paginaDieOmgeslagenMoetWorden) {
             paginaDieOmgeslagenMoetWorden.classList.add("omgeslagen");
             if(paginaDieOmgeslagenMoetWorden.nextElementSibling){
@@ -144,7 +140,6 @@ function turnPageRight() {
 
 function turnPageLeft() {
     console.log(doublePage);
-        // console.log(paginaDieOmgeslagenMoetWorden)
 
          var paginaDieOmgeslagenMoetWorden = document.querySelector( "div:nth-of-type(" + doublePage + ")")
 

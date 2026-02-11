@@ -54,17 +54,17 @@ Ik ben vandaag bijna de gehele dag bezig geweest om mijn functions in Javascript
 
 Uiteindelijk heb ik samen met Vasilis er nog naar gekeken en die heeft mij op weg geholpen en hebben we het volgende geschreven.
 
-<img src="images-readme/5feb-poging1-java.png" alt="alt text" width="200" />
+<img src="images-readme/5feb-poging1-java.png" alt="Een poging met de code in javascript" width="200" />
 
 Dit ging goed en ik had voor elkaaar gekregen om de eerste pagina te laten omslaan. Alleen vervolgens als ik doorklikte werkte het niet meer en kreeg ik in mijn consol de volgende fout.
 
-<img src="images-readme/error-in-doc.png" alt="alt text" width="200" />
+<img src="images-readme/error-in-doc.png" alt="Een error in mijn console log" width="200" />
 
 Ik kwam erachter dat er toch nog een foutje in stond in de geschreven code, dus dat had ik aangepast en toen kreeg ik geen foutcode meer. Nu was alleen het probleem nog dat ik de volgende pagina moest selecteren om vervolgend die om te laten kunnen slaan. Dus ik heb onderzoek gedaan naar hoe dat het beste kon en ik kwam uit op een element:  doublePage = doublePage.nextSibling; 
  https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling  
 
  Dit had ik er als volgt ingezet 
- <img src="images-readme/next-sibling-javascript.png" alt="alt text" width="200" />
+ <img src="images-readme/next-sibling-javascript.png" alt="Code vanhet gebruik van de nextsibling" width="200" />
 
 Alleen dit werkte nog niet en ik kon niet achterhalen wat de fout daarin was, plus de pagina's van mijn boek die stonden verkeerd. Dus dat was ook nog eens een probleem waar ik tegenaan liep. 
 Na tijd te hebben besteed aan het onderzoeken, kwam ik er weer niet uit en heb ik weer om hulp gevraagd.
@@ -73,7 +73,7 @@ Ik merk toch echt dat javascript andere koek is en dat het nog best wel pittig i
 
 
 Uiteindelijk na enige moeite en veel hulp is het gelukt en is het het volgende geworden. 
- <img src="images-readme/5feb-javascript.png" alt="alt text" width="200" />
+ <img src="images-readme/5feb-javascript.png" alt="Code van mijn javascript" width="200" />
 
 
 
@@ -106,7 +106,7 @@ Vandaag ben ik bezig geweest met:
 
 ## Proces 6 februari
 Voor de styling heb ik voor de binnenkant zoiets in gedachten:
-<img src="images-readme/paspoort-vision-idee.png" alt="alt text" width="200" />
+<img src="images-readme/paspoort-vision-idee.png" alt="Een opengeslagen boek met stempels erin als vision voor mijn idee" width="200" />
 
 Voor nu gebruik ik tijdelijk algemene afbeeldingen van internet alleen ik wil kijken of het volgende week nog lukt om zelf aan de slag te gaan ermee.
 
@@ -124,7 +124,7 @@ Als ik nu terug kijk op wat ik allemaal heb gedaan is het best wel veel en had i
 
 Ik ben blij met waar ik het deze week naartoe gewerkt heb en ben trots op het resultaat wat ik nu heb staan.
 
-<img src="images-readme/tussentijds-deel.png" alt="alt text" width="200" />
+<img src="images-readme/tussentijds-deel.png" alt="Een afbeelding van mijn tussentijdse werk" width="200" />
 
 Volgende week wil ik mij meer gaan focussen op visueel vlak en mijzelf daarop nog uitdagen en kijken hoe ik de kleuren van light-dark wat mooier en voor beide pagina's aantrekkelijk kan maken. En daarbij ook wat dieper in de css duiken.
 
@@ -157,12 +157,12 @@ Morgen als ik op school ben wil ik:
 ## Proces 10 februari
 Vandaag ben ik verder gegaan aan mijn code en heb ik de api werkend gekregen.
 
-<img src="images-readme/10-2-2026hele-lijst-api.png" alt="alt text" width="200" />
+<img src="images-readme/10-2-2026hele-lijst-api.png" alt="Een lange lijst met namen die ik heb opgehaald met de api" width="200" />
 
 Uiteindelijk was dat gelukt, alleen wilde ik nog een functie erin hebben waarin er steeds andere mede web kandidaten tevoorschijn zou komen. Dit werkte in eerste instantie ook niet echt. Ik heb verschillende dingen geprobeerd, ik heb dit keer zelfs chatgpt gevraagd, maar daardoor snapte ik het ook niet meer. Dus ben ik toch weer naar Vasilis gegaan.
 
 Want ik kreeg de elementen wel in eerste instantie, maar door de mathrandom brak het het weer en kreeg ik een error 400 code vanuit de api.
-<img src="images-readme/10-2-2026javascript-code-math-random.png" alt="alt text" width="200" />
+<img src="images-readme/10-2-2026javascript-code-math-random.png" alt="Stuk math.random code die ik heb geschreven" width="200" />
 
 ## daily chackout 4: 10 februari
 ### Wat heb ik vandaag gedaan?
@@ -209,14 +209,14 @@ Vandaag heb ik de puntjes op de I gezet. Ik heb de gradient wel zo gelaten, maar
 Uiteindelijk heb ik er ook nog een easter egg in gegooid, waar je als je alleen overeen hovert de button kan vinden voor een disco modus.
 
 ### Hoe lang duurde het?
-09:30 - 10:00 Intro praatje 
-10:00 - 11:00 code review
-11:00 - 11:30 gewerkt aan animatie van de svg op de voorpagina
-11:30 - 12:00 gewerkt aan de animatie van de postzegels
-12:00 - 12:30 pauze
-12:30 - 14:30 de easter egg toegevoegd 
-14:30 - 15:00 Een animatie op de laatste pagina toegevoegd bij mijn hond, want mijn hond kan niet stilzitten, dus ook niet op het scherm.
-15:00 - 15:45 Gespeeld en geprobeerd met animaties
+- 09:30 - 10:00 Intro praatje 
+- 10:00 - 11:00 code review
+- 11:00 - 11:30 gewerkt aan animatie van de svg op de voorpagina
+- 11:30 - 12:00 gewerkt aan de animatie van de postzegels
+- 12:00 - 12:30 pauze
+- 12:30 - 14:30 de easter egg toegevoegd 
+- 14:30 - 15:00 Een animatie op de laatste pagina toegevoegd bij mijn hond, want mijn hond kan niet stilzitten, dus ook niet op het scherm.
+- 15:00 - 15:45 Gespeeld en geprobeerd met animaties
 
 ### Wat heb ik geleerd?
 - Ik heb geleerd een animatie te maken met een svg, hij is een beetje cracky maar wel coool.
@@ -234,18 +234,40 @@ In deze week heb ik flinke stappen gezet zelf. Ik ben het meeste trots op de ani
 ### Finished product
 Hieronder zie je de verschillende pagina's die ik heb gemaakt.
 
-<img src="images-readme/page-1-eindproduct.png" alt="alt text" width="500" />
-<img src="images-readme/page-2-eindproduct.png" alt="alt text" width="500" />
-<img src="images-readme/page-3-eindproduct.png" alt="alt text" width="500" />
-<img src="images-readme/page-5-eindproduct.png" alt="alt text" width="500" />
+<img src="images-readme/page-1-eindproduct.png" alt="Een foto van de eerste pagina van mijn prototype" width="500" />
+<img src="images-readme/page-2-eindproduct.png" alt="Tweede foto van de tweede pagina's van mijn prototype" width="500" />
+<img src="images-readme/page-3-eindproduct.png" alt="Een foto van de derde en vierde pagina van mijn prototype" width="500" />
+<img src="images-readme/page-5-eindproduct.png" alt="een foto van de laatste pagina van mijn prototype" width="500" />
 
 ### Geschreven code
 Als laatste puntje kreeg ik mee dat in de footer iets losstaands is en dat de buttons die ik er als eerst in had gedaan, dat die horen bij de main, dus dat heb ik nog even aangepast.
-<img src="images-readme/aangepaste-code-geen-footer.png" alt="alt text" width="500" />
-<img src="images-readme/footer-leeg.png" alt="alt text" width="500" />
+<img src="images-readme/aangepaste-code-geen-footer.png" alt="Een foto van code die ik heb aangepast en uit de footer gehaald" width="500" />
+<img src="images-readme/footer-leeg.png" alt="Een lege footer" width="500" />
+
+Daarnaast heb ook een easter egg toegevoegd vandaag en daarvoor heb ik de manier ook gebruikt waarbij ik een light/dark heb gedaan en daaraan een hele lange keyframe toegeveogd met verschillende kleuren voor de disco effect.
+
+<img src="images-readme/disco-code.png" alt="De code die ik heb geschreven voor een disco easter egg" width="500" />
+<img src="images-readme/disco-vibe-pagina.png" alt="Als de easter egg is gevonden, en de achtergrond veranderd van kleur" width="500" />
+
+### Leerdoelen
+<img src="images-readme/leerdoelen-afgebeeld.png" alt="De drie stempels van mijn leerdoelen afgebeeld" width="500" />
+Ik had aan het begin van dit vak 3 leerdoelen opgesteld, een voor javascript om dat te leren schrijven en bergijpen, een voor css om meer uit te zoeken en iets met een svg te doen en mijn eigen belangen meer benoemen in en tijdens groepsprojecten. 
+
+Mijn eerste leerdoel over javascript heb ik al een beetje aangetoond door de uitdaging in javascript aan te gaan met het omslaan van de pagina's. Zie hieronder hoe de code is geworden.
+<img src="images-readme/javascript-turnpage.png" alt="Code van mijn javascript, met de function omslaan pagina" width="500" />
+Ik snap het grootste deel wel, maar ik moet vaak zelf eerst weer even opnieuw bestuderen, voordat ik het weer doorheb hoe dat ook alweer in elkaar steekt.
+
+Mijn css, ik heb er voor gekozen om maar een afbeelding als svg toe te voegen, omdat het een makkelijke vorm was die ik heb gemaakt met illustrator. Alleen ik liep er best wel tegenaan te hikken dat ik die path er niet in krijg. Want ik had ondertussen de svg in mijn images map gezet alleen daarmee kan je het niet binnen een animatie aanpassen. Dus ik ben naar iemand toegelopen waarvan ik vorige week vrijdag had gezien dat zij het wel had en zij had mij verteld dat je dit kon doen door de afbeelding te openen in je texteditor en dat je daar de path code krijgt.
+<img src="images-readme/onvolledige-wereld.png" alt="Een foto van een niet volledige wereldbol." width="500" />
+Uiteindelijk heb ik er een animatie opgezet waardoor het lijkt op slangen die over het scherm een pad volgen. 
+
+Als laatste heb ik mijn samenwerking leerdoel, deze kan ik helaas nog niet aantonen, omdat dit een individueel project was waarin ik aan de slag ben gegaan en dit valt onder samenwerken. 
 
 
  ## Bronvermelding
+
+Ook Vasilis en Sanne zijn mijn bronnen geweest, omdat ik ze ontzettend veel vragen heb gesteld over mijn javascript.
+
  Voor de .classlist
 
  https://stackoverflow.com/questions/76157470/is-there-a-way-to-animate-a-button-on-click-with-classlist-add 
@@ -282,3 +304,6 @@ https://fonts.google.com/selection/embed
 https://www.youtube.com/watch?v=dRloFvC7g6I  
 https://css-tricks.com/almanac/properties/s/stroke-dasharray/ 
 https://css-tricks.com/almanac/properties/s/stroke-dashoffset/
+
+### in de readme 
+https://static.vecteezy.com/ti/gratis-vector/t2/301548-binnenkant-van-een-paspoort-gratis-vector.jpg 
