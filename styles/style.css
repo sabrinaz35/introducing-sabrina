@@ -5,7 +5,7 @@
 
 :root {
   color-scheme: light dark;
-
+  /* Colors */
   --text-color: light-dark(#000000, #fff7e7);
   --background-color: light-dark(lightblue, rgb(91, 88, 88));
   --pasport-color: light-dark(#d751f5, #f59baa);
@@ -17,18 +17,19 @@
     rgba(247, 171, 245, 1) 100%
   );
   --paper-color: light-dark(antiquewhite, rgb(157, 107, 73));
+  --buton-hover-color: light-dark(#e9a4f9, #f0bfc7);
 
+  /* Sizes */
   --border-radius-book: 25px;
-  --small-font-size: 40px;
+  --small-font-size: 13px;
+  --h3-font-size: 18px;
 }
 
-/* Dit hieronder werkte niet */
+/******************************************/
+/*             Opmaak header.           */
+/******************************************/
 
-[value="light"],
-[value="dark"] {
-  scale: 1;
-}
-
+/* Light dark buttons */
 :root:has([value="dark"]:checked) {
   color-scheme: dark;
 
@@ -44,6 +45,57 @@
   color-scheme: light;
 }
 
+:root:has([value="disco"]:checked) {
+  button {
+    animation-name: discoColors;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  body {
+    animation-name: discoColors;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+  }
+}
+
+@keyframes discoColors {
+  0% {
+    background-color: #ff8181;
+  }
+  10% {
+    background-color: rgb(255, 221, 158);
+  }
+  20% {
+    background-color: rgb(254, 254, 180);
+  }
+  30% {
+    background-color: rgb(159, 255, 159);
+  }
+  40% {
+    background-color: rgb(147, 147, 255);
+  }
+  50% {
+    background-color: plum;
+  }
+  60% {
+    background-color: hotpink;
+  }
+  70% {
+    background-color: #ff8181;
+  }
+  80% {
+    background-color: aquamarine;
+  }
+  90% {
+    background-color: azure;
+  }
+  100% {
+    background-color: whitesmoke;
+  }
+}
+
 form {
   display: flex;
   justify-content: center;
@@ -55,6 +107,13 @@ label {
   align-items: center;
   gap: 0.5em;
   font-family: "Special Elite", "Courier New", Courier, monospace;
+
+  &:nth-of-type(3) {
+    opacity: 0;
+    &:hover {
+      opacity: 100%;
+    }
+  }
 }
 
 header {
@@ -63,6 +122,9 @@ header {
   margin: 3rem;
 }
 
+/******************************************/
+/*             Opmaak main.           */
+/******************************************/
 main {
   perspective: 90em;
   transform-style: preserve-3d;
@@ -72,7 +134,7 @@ main {
   place-content: center;
 }
 
-div {
+div:not(:last-of-type) {
   display: grid;
   grid-column-start: 2;
   grid-row-start: 1;
@@ -115,7 +177,6 @@ div.omgeslagen {
 }
 
 /* https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figure */
-
 section {
   display: grid;
   grid-column-start: 1;
@@ -143,7 +204,7 @@ section {
   }
 
   h3 {
-    font-size: 15px;
+    font-size: var(--h3-font-size);
   }
 
   img {
@@ -154,24 +215,23 @@ section {
 
   li,
   p {
-    font-size: 12px;
+    font-size: var(--small-font-size);
+    line-height: 1.5;
     list-style-type: none;
   }
 }
 
 @media (width>750px) {
   section {
-    width: 20vw;
+    width: 25vw;
   }
 }
 
 /* Styling van de pagina's */
-
 div:first-of-type section:first-child {
   display: grid;
   grid-template-rows: 1fr 15px 15px 3fr;
   place-items: center;
-  /* background-color: var(--pasport-color); */
   background: var(--bg-gradient);
   gap: 0.5rem;
 
@@ -182,7 +242,7 @@ div:first-of-type section:first-child {
   }
 
   p {
-    font-size: 10px;
+    font-size: var(--small-font-size);
   }
 
   img {
@@ -190,8 +250,32 @@ div:first-of-type section:first-child {
   }
 }
 
-/* My profile pagina */
+svg {
+  fill: none;
+  stroke: var(--text-color);
+  stroke-miterlimit: 10;
+  stroke-width: 8px;
 
+  &:hover {
+    animation: drawLine 6s linear forwards;
+  }
+}
+
+/* https://www.youtube.com/watch?v=dRloFvC7g6I */
+@keyframes drawLine {
+  from {
+    stroke-dasharray: 260;
+  }
+
+  to {
+    /* https://css-tricks.com/almanac/properties/s/stroke-dasharray/ */
+    /* https://css-tricks.com/almanac/properties/s/stroke-dashoffset/*/
+    stroke-dashoffset: 0;
+    stroke-dasharray: 100;
+  }
+}
+
+/* My profile pagina */
 div:first-of-type section:nth-of-type(2) {
   display: grid;
   grid-template-rows: 40px 1fr 1fr;
@@ -286,6 +370,10 @@ div:nth-of-type(3) section:nth-of-type(1) {
 
     li:nth-of-type(even) {
       rotate: 5deg;
+
+      /* &:hover {
+        animation: 3s slightTwist ease-in-out forwards;
+      } */
     }
   }
 
@@ -300,36 +388,44 @@ div:nth-of-type(3) section:nth-of-type(1) {
   }
 }
 
+div:nth-of-type(3) section:nth-of-type(1),
+div:nth-of-type(2) section:nth-of-type(2) {
+  li:nth-of-type(2) img {
+    animation: slightTwist 2s ease-in-out infinite;
+  }
+}
+
 @keyframes stamp {
   0% {
     display: hidden;
   }
-  10% {
-    scale: 5;
-    z-index: 2;
+
+  50% {
+    rotate: 360deg;
   }
-  30% {
-    scale: 2;
+
+  100% {
+    rotate: 0deg;
+  }
+}
+
+@keyframes slightTwist {
+  0%,
+  100% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: 5deg;
   }
   50% {
-    scale: 0;
+    rotate: 0deg;
   }
-  70% {
-    rotate: 180deg;
-  }
-  90% {
-    rotate: -180deg;
-  }
-  95% {
-    rotate: 180deg;
-  }
-  100% {
-    rotate: -180deg;
+  75% {
+    rotate: -5deg;
   }
 }
 
 /* Mijn favorieten pagina */
-
 div:nth-of-type(3) section:nth-of-type(2) {
   ul {
     display: grid;
@@ -351,20 +447,42 @@ div:nth-of-type(3) section:nth-of-type(2) {
 
 /* Pagina over medestudenten */
 div:nth-of-type(4) section:nth-of-type(1) {
-  p:first-of-type {
-    font-size: 15px;
-  }
-
   li p {
-    font-size: 2rem;
+    font-size: var(--small-font-size);
+  }
+  li p {
+    font-size: 3rem;
   }
 }
 
-/* De footer -> de buttons staan inde footer daarom staat de styling eronder */
+/* The end pagina*/
+div:nth-of-type(4) section:nth-of-type(2) {
+  img {
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+}
 
-footer {
+@keyframes bounce {
+  0% {
+    translate: -20px;
+  }
+  50% {
+    translate: 100px;
+  }
+  100% {
+    translate: 0;
+  }
+}
+
+/* next en terug button*/
+div:last-of-type {
   display: grid;
   grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
   place-items: center;
 
   .prevButton {
@@ -378,11 +496,15 @@ footer {
 
 button {
   width: fit-content;
-  font-size: 15px;
+  font-size: var(--small-font-size);
   border-radius: 30rem;
   padding: 1rem;
   margin: 10px;
   border: none;
   background-color: var(--pasport-color);
   font-family: "Special Elite", "Courier New", Courier, monospace;
+
+  &:hover {
+    background-color: var(--buton-hover-color);
+  }
 }

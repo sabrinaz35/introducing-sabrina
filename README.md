@@ -128,6 +128,9 @@ Ik ben blij met waar ik het deze week naartoe gewerkt heb en ben trots op het re
 
 Volgende week wil ik mij meer gaan focussen op visueel vlak en mijzelf daarop nog uitdagen en kijken hoe ik de kleuren van light-dark wat mooier en voor beide pagina's aantrekkelijk kan maken. En daarbij ook wat dieper in de css duiken.
 
+Uiteindelijk heb ik wel al kunnen werken aan mijn leerdoelen, die van javascript is zeker gelukt, want ik heb code geschreven di ik eerst niet snapte, maar nu uiteindelijk wel. Css is opzich nog niet helemaal gelukt en mijn samenwerkingsleerdoel dat gaat nu ook niet helemaal, omdat dit een zelfstandig deel is.
+
+
 
 ## Daily checkout 3: 9 februari 
 Vandaag was ik niet aanwezig op school, ik heb het hele weekend ziek op bed gelegen en bleef nog een dagje thuis. Ik voelde mij wel al wat beter en heb daarom een paar dingetjes kunnen doen aan mijn website.
@@ -190,6 +193,57 @@ Ook heb ik wat tips en trick geleerd over typografie, waar ik nooit meer aan had
 - Misschien andere gradient kleur
 - nog wat animaties toevoegen.
 
+### Code review 11 februari
+Tijdens de code review hebben Jelle en ik samen gekeken naar de verschillende aspecten en er stonden voor mij ook wat nieuwe dingen tussen. 
+Zoals kebabcase and camelcase, kebabcase is met een streepje ertussen kebab-case en camelcase is waarbij het volgende wordt begint met een hoofdletter camelCase. Uiteindelijk moet ik nog een aantal dingetjes aanpassen:
+- toevoegen van extra comments in mijn css over wat wat
+- js iets meer opschonen
+- line-height aanpassen en de lettergrootte iets groter 
+    font-size: 13px;
+    line-height: 1.5; 
+
+
+## daily chackout 5: 11 februari
+### Wat heb ik vandaag gedaan?
+Vandaag heb ik de puntjes op de I gezet. Ik heb de gradient wel zo gelaten, maar ben mij wat meer gaan focussen op de animaties die ik nog eventueel kon toevoegen.
+Uiteindelijk heb ik er ook nog een easter egg in gegooid, waar je als je alleen overeen hovert de button kan vinden voor een disco modus.
+
+### Hoe lang duurde het?
+09:30 - 10:00 Intro praatje 
+10:00 - 11:00 code review
+11:00 - 11:30 gewerkt aan animatie van de svg op de voorpagina
+11:30 - 12:00 gewerkt aan de animatie van de postzegels
+12:00 - 12:30 pauze
+12:30 - 14:30 de easter egg toegevoegd 
+14:30 - 15:00 Een animatie op de laatste pagina toegevoegd bij mijn hond, want mijn hond kan niet stilzitten, dus ook niet op het scherm.
+15:00 - 15:45 Gespeeld en geprobeerd met animaties
+
+### Wat heb ik geleerd?
+- Ik heb geleerd een animatie te maken met een svg, hij is een beetje cracky maar wel coool.
+- Ik heb geleerd hoe je een svg als path in je code krijgt, dit moest ik even aan een mede student vragen, maar als je de afbeelding via de texteditor opent dan krijg je de code van de path etc. 
+
+### Wat ga ik morgen doen?
+- Morgen is de deadline, dus eigenlijk gewoon nog even mijn code misschien doornemen en that's it voor dit vak.
+- Ik heb nog even de buttons uit de footer gehaald en ervoor gezorgt dat die in de main staan, want het was een rare plek om ze in de footer te hebben staan.  
+
+
+
+## Weekly reflectie 11 februari
+In deze week heb ik flinke stappen gezet zelf. Ik ben het meeste trots op de animatie van de svg en hoe uiteindelijk de look van mijn boekje is geworden. Ik ben blij met wat ik neer heb kunnen zetten in zo'n korte tijd. Maar ik ben wel weer meteen achter een nieuw leerdoel gekomen en dat is. Vooraf een design maken en dan pas gaan werken aan de code, nu was ik namelijk nog best wel zoekende in hoe ik het eruit wilde laten zien.
+
+### Finished product
+Hieronder zie je de verschillende pagina's die ik heb gemaakt.
+
+<img src="images-readme/page-1-eindproduct.png" alt="alt text" width="500" />
+<img src="images-readme/page-2-eindproduct.png" alt="alt text" width="500" />
+<img src="images-readme/page-3-eindproduct.png" alt="alt text" width="500" />
+<img src="images-readme/page-5-eindproduct.png" alt="alt text" width="500" />
+
+### Geschreven code
+Als laatste puntje kreeg ik mee dat in de footer iets losstaands is en dat de buttons die ik er als eerst in had gedaan, dat die horen bij de main, dus dat heb ik nog even aangepast.
+<img src="images-readme/aangepaste-code-geen-footer.png" alt="alt text" width="500" />
+<img src="images-readme/footer-leeg.png" alt="alt text" width="500" />
+
 
  ## Bronvermelding
  Voor de .classlist
@@ -222,5 +276,9 @@ https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling
 
 
 ### fonts
+https://fonts.google.com/selection/embed  
 
-https://www.dafont.com/elegant-typewriter.font 
+### Animaties 
+https://www.youtube.com/watch?v=dRloFvC7g6I  
+https://css-tricks.com/almanac/properties/s/stroke-dasharray/ 
+https://css-tricks.com/almanac/properties/s/stroke-dashoffset/

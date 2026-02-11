@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>This is me</title>
+    <link rel="icon" type="image/x-icon" href="images/mysha-mijn-hond.png" />
     <link rel="stylesheet" href="styles/style.css" />
     <!-- https://fonts.google.com/selection/embed -->
     <link
@@ -15,10 +16,13 @@
     <header>
       <form>
         <label>
-          <input type="radio" name="color-theme" value="light" checked /> Light
+          <input type="radio" name="color-theme" value="light" checked /> Licht
         </label>
         <label>
-          <input type="radio" name="color-theme" value="dark" /> Dark
+          <input type="radio" name="color-theme" value="dark" /> Donker
+        </label>
+        <label>
+          <input type="radio" name="color-theme" value="disco" /> Disco
         </label>
       </form>
     </header>
@@ -174,7 +178,7 @@
       <div class="page">
         <section>
           <h2>Medestudenten</h2>
-          <p>Favoriete emoji's van mijn medestudenten</p>
+          <p>Favoriete emoji's van medestudenten</p>
           <ol></ol>
         </section>
         <section>
@@ -185,11 +189,12 @@
           />
         </section>
       </div>
+      <div>
+        <button class="prevButton">Terug</button>
+        <button class="nextButton">Volgende</button>
+      </div>
     </main>
-    <footer>
-      <button class="prevButton">Terug</button>
-      <button class="nextButton">Volgende</button>
-    </footer>
+    <footer></footer>
     <script src="scripts/script.js"></script>
   </body>
 </html>
