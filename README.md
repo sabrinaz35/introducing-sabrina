@@ -302,6 +302,8 @@ https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling
  Prompt: const endpoint = '/person/?filter[fav_emoji][_nnull]=true?limit=3/' + Math.floor(Math.random()*100) + 1; Klopt dit wat ik hier doe? In mijn code werkt het namelijk niet
  https://chatgpt.com/share/698b157b-f1b0-8001-a6ee-c56649d07fa8 
 
+ https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array 
+
 
 ### fonts
 https://fonts.google.com/selection/embed  

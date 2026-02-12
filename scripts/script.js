@@ -16,13 +16,12 @@ async function insertUserInfo(){
     let userInfo = await response.json()
    
     console.log(userInfo)
-
+    // Met behulp van een klasgenoot de svg zo in de code gekregen
     let userInfoHTML =
     `<section>
     <h1>${userInfo.data.name}'s world</h1>
     <p>Birthday: ${userInfo.data.birthdate}</p>
     <p>Githandle: ${userInfo.data.github_handle}</p>
-
     <?xml version="1.0" encoding="UTF-8"?>
     <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 309.11 309.11">
     <g id="Layer_1-2" data-name="Layer 1">
@@ -95,7 +94,8 @@ async function medeWebbersInfo ( ) {
 
 /**
  * Shuffle array functie waarbij de data uiteindelijk in mijn code wordt geshuffeld
- * Hij geeft een lengte mee -1, want 0 heeft ook een waarde, Als de functie wordt aangevraagd dan doet hij een random + 1 
+ * Hij geeft een lengte mee -1, want 0 heeft ook een waarde, Als de functie wordt aangevraagd dan doet hij een random + 1
+ * Deze code heb ik kegregen van Vasilis en Vasilis heeft het van https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array  
  */
 
 function shuffleArray(array) {

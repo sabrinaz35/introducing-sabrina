@@ -26,8 +26,33 @@
 }
 
 /******************************************/
-/*             Opmaak header.           */
+/*             Opmaak header.             */
 /******************************************/
+header {
+  display: grid;
+  place-content: center;
+  margin: 3rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: "Special Elite", "Courier New", Courier, monospace;
+
+  &:nth-of-type(3) {
+    opacity: 0;
+    &:hover {
+      opacity: 100%;
+    }
+  }
+}
 
 /* Light dark buttons */
 :root:has([value="dark"]:checked) {
@@ -46,17 +71,17 @@
 }
 
 :root:has([value="disco"]:checked) {
-  button {
-    animation-name: discoColors;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-  }
-
   body {
     animation-name: discoColors;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-delay: 0.5s;
+  }
+
+  button {
+    animation-name: discoColors;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
   }
 }
 
@@ -94,32 +119,6 @@
   100% {
     background-color: whitesmoke;
   }
-}
-
-form {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-}
-
-label {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  font-family: "Special Elite", "Courier New", Courier, monospace;
-
-  &:nth-of-type(3) {
-    opacity: 0;
-    &:hover {
-      opacity: 100%;
-    }
-  }
-}
-
-header {
-  display: grid;
-  place-content: center;
-  margin: 3rem;
 }
 
 /******************************************/
@@ -234,7 +233,9 @@ section {
   }
 }
 
-/* Styling van de pagina's */
+/******************************************/
+/*   Specifieke tyling van de pagina's.   */
+/******************************************/
 div:first-of-type section:first-child {
   display: grid;
   grid-template-rows: 1fr 15px 15px 3fr;
@@ -287,15 +288,6 @@ div:first-of-type section:nth-of-type(2) {
   display: grid;
   grid-template-rows: 40px 1fr 1fr;
 
-  h2 {
-    grid-row: 1;
-  }
-
-  h3 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-
   article:nth-of-type(1) {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -312,6 +304,15 @@ div:first-of-type section:nth-of-type(2) {
 
     img {
       width: 100%;
+    }
+
+    h2 {
+      grid-row: 1;
+    }
+
+    h3 {
+      grid-column-start: 1;
+      grid-column-end: 3;
     }
 
     img:hover {
@@ -332,14 +333,9 @@ div:first-of-type section:nth-of-type(2) {
 }
 
 /* Werkpagina */
-
 div:nth-of-type(2) section:nth-of-type(1) {
   h2 {
     grid-column-start: 1;
-  }
-
-  img {
-    width: 100%;
   }
 
   p:first-of-type {
@@ -352,6 +348,10 @@ div:nth-of-type(2) section:nth-of-type(1) {
     grid-column-start: 1;
   }
 
+  img {
+    width: 100%;
+  }
+
   img:nth-of-type(2) {
     grid-row-start: 3;
     grid-column-start: 2;
@@ -359,7 +359,6 @@ div:nth-of-type(2) section:nth-of-type(1) {
 }
 
 /* De travel pagina */
-
 div:nth-of-type(2) section:nth-of-type(2),
 div:nth-of-type(3) section:nth-of-type(1) {
   ul {
@@ -377,10 +376,6 @@ div:nth-of-type(3) section:nth-of-type(1) {
 
     li:nth-of-type(even) {
       rotate: 5deg;
-
-      /* &:hover {
-        animation: 3s slightTwist ease-in-out forwards;
-      } */
     }
   }
 
