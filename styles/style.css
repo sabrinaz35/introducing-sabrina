@@ -292,6 +292,10 @@ div:first-of-type section:nth-of-type(2) {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
 
+    ul {
+      grid-row-start: 2;
+    }
+
     img {
       width: 80%;
     }
